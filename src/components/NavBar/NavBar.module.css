@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+:root {
+    --primary-color: #ECB33B
+}
+
+.button {
+    border-radius: 40px;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 1rem 0;
+    outline: 0;
+    padding: 2rem 4vw;
+    text-align: center;
+    white-space: nowrap;
+    background: #ECB33B;
+    font-family: 'DM Sans', sans-serif; 
+}
+
+.button__download {
+    background: #ECB33B;
+}
