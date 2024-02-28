@@ -4,14 +4,16 @@ import image from "../../static/images/logo.png";
 
 const NavBar: React.FC = () => {
   return (
-    <div>
+    <nav className={style.nav}>
       <a href="#">
-        <img src={image} alt="Logo" />
+        <img className={style.logo} src={image} alt="Logo" />
       </a>
-      <button className={`${style.button} ${style.button__download}`}>
-        Download App
-      </button>
-    </div>
+      <div className={style.container}>
+        <button className={`${style.button} ${style.button__download}`}>
+          Download App
+        </button>
+      </div>
+    </nav>
   );
 };
 

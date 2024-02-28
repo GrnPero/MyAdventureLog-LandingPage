@@ -4,21 +4,53 @@
     --primary-color: #ECB33B
 }
 
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.container {
+    padding-right: 0.5rem; /* Adjust the padding for the button container */
+    background-color: transparent; /* Set background color to transparent */
+}
+
 .button {
-    border-radius: 40px;
+    border-radius: 5px;
     border: 0;
     cursor: pointer;
-    font-size: 1.8rem;
-    font-weight: 500;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 3rem;
     margin: 1rem 0;
     outline: 0;
-    padding: 2rem 4vw;
+    padding: 0.4rem 1.5rem;
     text-align: center;
     white-space: nowrap;
-    background: #ECB33B;
     font-family: 'DM Sans', sans-serif; 
 }
 
 .button__download {
     background: #ECB33B;
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+        padding-left: 7rem;
+    }
+
+    .button {
+        font-size: 1.4rem;
+        font-weight: 500;
+        padding: 0.4rem 2rem;
+    }
+
+    .container {
+        padding-right: 7rem;
+    }
 }
