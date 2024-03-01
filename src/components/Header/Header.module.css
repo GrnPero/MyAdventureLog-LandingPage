@@ -1,15 +1,14 @@
 .background {
     background-image: url('../../../static/images/mobile_background.png'); /* Path to your background image */
     background-size: cover; /* Cover the entire container */
-
     margin: -8px;
     overflow: hidden;
 }
 
-@media screen and (min-width: 1024px) {
-    .background {
-        background-image: url('../../../static/images/desktop_background.png');
-    }
+.grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for mobile layout */
+    gap: 20px; /* Gap between grid items */
 }
 
 .header__special {
@@ -27,11 +26,46 @@
 .googleplay {
     width: 11.8rem;
     height: 3.6rem;
-    flex-shrink: none;
+    flex-shrink: 0;
 }
 
 .iphone {
     width: auto;
     height: 35rem;
     flex-shrink: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .background {
+        background-image: url('../../../static/images/desktop_background.png');
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header__hero {
+        padding-left: 13.5rem;
+    }
+
+    .header__iphone {
+        padding-right: 26rem;
+        padding-left: 16rem;
+        padding-bottom: 5rem;
+        padding-top: 5.6rem;
+    }
+
+    .iphone {
+        height: 59rem;
+    }
+
+    .googleplay {
+        width: 14rem;
+        height: 4.3rem;
+    }
+
+    .container {
+        justify-content: left;
+        align-items: left;        
+    }
 }
