@@ -1,0 +1,37 @@
+.background {
+    background-image: url('../../../static/images/mobile_background.png'); /* Path to your background image */
+    background-size: cover; /* Cover the entire container */
+
+    margin: -8px;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+    .background {
+        background-image: url('../../../static/images/desktop_background.png');
+    }
+}
+
+.header__special {
+    color: var(--accent-color);
+    display: inline;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-bottom: 2rem;
+}
+
+.googleplay {
+    width: 11.8rem;
+    height: 3.6rem;
+    flex-shrink: none;
+}
+
+.iphone {
+    width: auto;
+    height: 35rem;
+    flex-shrink: 0;
+}

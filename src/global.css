@@ -6,6 +6,7 @@
     --secondary-color: #00d9ff;
     --accent-color: #ff3400;
     --headings-color: #fff;
+    --accent-headings-color: #EC6508;
     --alt-heading-color: #191B35;
     --body-darker-color: #5c5577;
     --body-color: #686565;
@@ -29,6 +30,7 @@ html {
 
 img {
   width: 100%;
+  object-fit: cover;
 }
 
 body {
@@ -36,17 +38,21 @@ body {
     font-size: 2rem;
     line-height: 1.5;
     color: var(--body-color);
+    overflow-wrap: break-word; /* Ensure long words wrap */
+    word-wrap: break-word; /* Ensure long words wrap (for older browsers) */
 }
 
 h1, h2, h3 {
     font-family: 'Clash Display', sans-serif;
+    text-transform: uppercase;
     color: var(--headings-color);
     margin-bottom: 1rem;
     line-height: 1.1;
+    text-align: center;
 }
 
 h1 {
-    font-size: 6rem;
+    font-size: 2.5rem;
 }
 
 h2 {
@@ -60,7 +66,10 @@ h3 {
 }
 
 p {
+    font-size: 1.4rem;
     margin-top: 0;
+    text-align: center;
+    line-height: 3rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -84,4 +93,22 @@ p {
 /* Links */
 a {
     text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 1.8rem;
+    }
+
+    h1 {
+        font-size: 8rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 2.4rem;
+    }
 }
