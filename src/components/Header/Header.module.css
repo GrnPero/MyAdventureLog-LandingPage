@@ -1,3 +1,8 @@
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
 .background {
     background-image: url('../../../static/images/mobile_background.png'); /* Path to your background image */
     background-size: cover; /* Cover the entire container */
@@ -8,7 +13,6 @@
 .grid {
     display: grid;
     grid-template-columns: 1fr; /* Single column for mobile layout */
-    gap: 20px; /* Gap between grid items */
 }
 
 .header__special {
@@ -16,7 +20,7 @@
     display: inline;
 }
 
-.container {
+.container-image {
     justify-content: center;
     align-items: center;
     display: flex;
@@ -38,25 +42,28 @@
 @media screen and (min-width: 1024px) {
     .background {
         background-image: url('../../../static/images/desktop_background.png');
+        background-position: center;
     }
 
     .grid {
         grid-template-columns: repeat(2, 1fr);
+        padding: 5rem 10rem 5rem 10rem;
+        margin: 0 auto;
+        gap: 5rem; /* Gap between grid items */
     }
 
     .header__hero {
-        padding-left: 13.5rem;
+        padding-top: 10rem;
     }
 
     .header__iphone {
-        padding-right: 26rem;
-        padding-left: 16rem;
-        padding-bottom: 5rem;
-        padding-top: 5.6rem;
+        justify-content: center;
+        align-items: center;
     }
 
     .iphone {
-        height: 59rem;
+        height: 50rem;
+        width: auto
     }
 
     .googleplay {
@@ -64,7 +71,7 @@
         height: 4.3rem;
     }
 
-    .container {
+    .container-image {
         justify-content: left;
         align-items: left;        
     }
