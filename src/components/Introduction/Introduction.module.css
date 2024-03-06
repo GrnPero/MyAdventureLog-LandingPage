@@ -1,0 +1,99 @@
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.block {
+    margin: 2rem 2rem; /* Margin for top and bottom, 2rem for left and right */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for mobile layout */
+}
+
+.alt-heading {
+    color: #191B35;
+    line-height: 3.2rem;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.heading-text {
+    font-size: 1.4rem;
+    font-style: normal;
+    line-height: 2.2rem;
+}
+
+.play-store {
+    height: 3.6rem;
+    width: 11.8rem 
+}
+
+.iphone {
+    width: auto;
+    height: 32rem;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-top: 1.82rem;
+}
+
+@media screen and (max-width: 1023px) {
+  .imageOrder {
+    order: 2; /* Image appears after text in mobile layout */
+  }
+}
+
+@media screen and (min-width: 1024px) {
+    .block {
+        margin: 0 auto;
+    }
+
+    .grid-one-two {
+        grid-template-columns: repeat(2, 1fr);
+    } 
+
+    .imageOrder {
+        order: -1; /* Image appears before text in desktop layout */
+    }
+
+    .alt-heading {
+        font-size: 4.2rem;
+        line-height: 5.4rem;
+        padding-right: 5rem;
+        padding-top: 10rem;
+    }   
+    
+    .heading-text {
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 3rem;
+        padding-right: 5rem;
+    }
+
+    .google-play-container {
+        justify-content: left;
+        padding-top: 1rem;
+    }
+
+    .iphone {
+        width: auto;
+        height: 64rem;
+        padding-top: 4rem;
+    }
+
+.play-store {
+    height: 4.34rem;
+    width: 14rem 
+}
+
+.header-container {
+    height: 40rem;
+}
+}
