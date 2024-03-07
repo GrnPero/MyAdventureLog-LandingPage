@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+.container {
+  margin: 2rem 2rem;
+}
+
+.background {
+    background-image: url('../../../static/images/feature_background.svg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire container */
+    margin: -8px;
+    overflow: hidden;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for mobile layout */
+}
+
+.icon {
+    width: 6rem;
+    height: 6rem;
+}
+
+.feature {
+    justify-content: left;
+    align-items: left;
+    flex-shrink: 0;
+    margin-top: 3rem;
+}
+
+.feature-container {
+    margin: 2rem 2rem;
+}
+
+.feature-header {
+    font-size: 2.2rem;
+    line-height: 3.8rem;
+    text-transform: uppercase;
+    font-family: Oswald;
+}
+
+.feature-p {
+    color: #DFDFDF;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+.feature-text {
+    text-align: left;
+}
+
+.google-play {
+    width: 11.8rem;
+    height: 3.6rem;
+}
+
+.google-play-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1140px;
+        margin: 0 auto;
+    }  
+}
