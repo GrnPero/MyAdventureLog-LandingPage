@@ -47,73 +47,101 @@ const IndexPage: React.FC<PageProps> = () => {
           />
         </div>
       </section>
-      <section className={`${featureStyles.grid} ${featureStyles.background}`}>
-        <div className={featureStyles.container}>
-          <h1>Key features</h1>
-          <p>
-            MyAdventureLog, the ultimate companion for capturing and reliving
-            your most memorable moments.
-          </p>
-          <div className={featureStyles.googlePlayContainer}>
-            <img
-              src={GooglePlay}
-              alt="Get on Google Play"
-              className={featureStyles.googlePlay}
-            />
-          </div>
-          <div className={featureStyles.featureContainer}>
-            <div className={featureStyles.feature}>
-              <img src={Marker} alt="Marker" className={featureStyles.icon} />
-              <div>
-                <h1
-                  className={`${featureStyles.featureText} ${featureStyles.featureHeader}`}
-                >
-                  Location Tracking
-                </h1>
-                <p
-                  className={`${featureStyles.featureText} ${featureStyles.featureP}`}
-                >
-                  Users can save their current location with just a tap.
-                </p>
-              </div>
+      <section className={`${featureStyles.background}`}>
+        <div className={`${featureStyles.container} ${featureStyles.grid}`}>
+          <div
+            className={`${featureStyles.gridOneTwo} ${featureStyles.heading} `}
+          >
+            <h1 className={featureStyles.headingText}>Key features</h1>
+            <p
+              className={` ${featureStyles.featureP} ${featureStyles.featurePHeading}`}
+            >
+              MyAdventureLog, the ultimate companion for capturing and reliving
+              your most memorable moments.
+            </p>
+            <div className={featureStyles.googlePlayContainer}>
+              <img
+                src={GooglePlay}
+                alt="Get on Google Play"
+                className={featureStyles.googlePlay}
+              />
             </div>
-            <div>
-              <div className={featureStyles.feature}>
-                <img src={Globe} alt="Marker" className={featureStyles.icon} />
+          </div>
+          <div className={featureStyles.gridOneTwo}>
+            <div className={featureStyles.featureContainer}>
+              <div
+                className={`${featureStyles.feature} ${featureStyles.gridFeature}`}
+              >
+                <div className={featureStyles.desktop}>
+                  <img
+                    src={Marker}
+                    alt="Marker"
+                    className={featureStyles.icon}
+                  />
+                </div>
                 <div>
                   <h1
                     className={`${featureStyles.featureText} ${featureStyles.featureHeader}`}
                   >
-                    Personalized Logs
+                    Location Tracking
                   </h1>
                   <p
                     className={`${featureStyles.featureText} ${featureStyles.featureP}`}
                   >
-                    Write detailed logs about activities, memories, or thoughts
-                    associated with each location.
+                    Users can save their current location with just a tap.
                   </p>
                 </div>
               </div>
-            </div>
-            <div>
-              <div className={featureStyles.feature}>
-                <img
-                  src={GoogleMap}
-                  alt="Marker"
-                  className={featureStyles.icon}
-                />
-                <div>
-                  <h1
-                    className={`${featureStyles.featureText} ${featureStyles.featureHeader}`}
-                  >
-                    Interactive Map
-                  </h1>
-                  <p
-                    className={`${featureStyles.featureText} ${featureStyles.featureP}`}
-                  >
-                    View all saved locations as markers on Google Maps for easy
-                    navigation and reminiscing.
-                  </p>
+              <div>
+                <div
+                  className={`${featureStyles.feature} ${featureStyles.gridFeature}`}
+                >
+                  <div className={featureStyles.desktop}>
+                    <img
+                      src={Globe}
+                      alt="Marker"
+                      className={featureStyles.icon}
+                    />
+                  </div>
+                  <div>
+                    <h1
+                      className={`${featureStyles.featureText} ${featureStyles.featureHeader}`}
+                    >
+                      Personalized Logs
+                    </h1>
+                    <p
+                      className={`${featureStyles.featureText} ${featureStyles.featureP}`}
+                    >
+                      Write detailed logs about activities, memories, or
+                      thoughts associated with each location.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div
+                  className={`${featureStyles.feature} ${featureStyles.gridFeature}`}
+                >
+                  <div className={featureStyles.desktop}>
+                    <img
+                      src={GoogleMap}
+                      alt="Marker"
+                      className={featureStyles.icon}
+                    />
+                  </div>
+                  <div>
+                    <h1
+                      className={`${featureStyles.featureText} ${featureStyles.featureHeader}`}
+                    >
+                      Interactive Map
+                    </h1>
+                    <p
+                      className={`${featureStyles.featureText} ${featureStyles.featureP}`}
+                    >
+                      View all saved locations as markers on Google Maps for
+                      easy navigation and reminiscing.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

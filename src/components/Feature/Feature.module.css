@@ -16,6 +16,11 @@
     grid-template-columns: 1fr; /* Single column for mobile layout */
 }
 
+.grid-feature {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 .icon {
     width: 6rem;
     height: 6rem;
@@ -46,6 +51,11 @@
     line-height: 2rem;
 }
 
+.feature-p-heading {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+}
+
 .feature-text {
     text-align: left;
 }
@@ -66,5 +76,64 @@
     .container {
         max-width: 1140px;
         margin: 0 auto;
-    }  
+    } 
+    
+    .grid-one-two {
+        margin: 4rem 4rem;
+    } 
+    
+    .heading {
+        margin-top: 14rem;
+    }
+
+    .heading-text {
+        line-height: 7.6rem;
+        font-size: 5.4rem;
+        font-weight: 700;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-feature {
+        grid-template-columns: 0.3fr 1fr;
+        gap: 3.3rem;
+    }
+
+    .google-play-container {
+        margin-top: 4rem;
+        justify-content: left;
+        align-items: left;
+    }
+
+    .background {
+        background-image: url('../../../static/images/feature_background_desktop.svg'); /* Path to your background image */
+    }
+
+    .desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .icon {
+        width: 8.8rem;
+        height: 8.8rem;
+    }
+
+    .feature-header {
+        font-size: 2.8rem;
+        line-height: 3.8rem;
+    }
+
+    .feature-p {
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+    }
+
+    .feature-p-heading {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
 }
