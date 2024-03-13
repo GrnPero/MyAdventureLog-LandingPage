@@ -2,7 +2,7 @@
 
 .container {
   margin: 2rem 2rem;
-   display: flex; /* Add this line */
+  display: flex; /* Add this line */
   flex-direction: column; /* Add this line */
   justify-content: center; /* Add this line */
   align-items: center; /* Add this line */
@@ -51,4 +51,37 @@
 .character {
   height: 14.44rem;
   width: 14.44rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1140px;
+        margin: 0 auto;
+        margin-bottom: 11.95rem;
+    }
+
+    .background {
+      background-image: url("../../../static/images/character_background_desktop.png");
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .character-header {
+      text-align: center;
+      font-size: 4.2rem;
+      line-height: 7.6rem;
+    }
+
+    .character-p {
+      font-size: 2rem;
+      line-height: 3rem;
+      text-align: center;
+      width: 66rem;
+    }
+
+    .character-card {
+      margin-top: 4rem;
+    }
 }
