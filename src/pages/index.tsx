@@ -3,11 +3,14 @@ import type { HeadFC, PageProps } from "gatsby";
 import Layout from "../components/layout";
 import * as introductionStyles from "../components/Introduction/Introduction.module.css";
 import * as featureStyles from "../components/Feature/Feature.module.css";
+import * as characterStyles from "../components/Character/Character.module.css";
 import GooglePlay from "../../static/images/Google_Play-Badge-Logo.svg";
 import iPhone from "../../static/images/IntroductioniPhone.png";
 import Marker from "../../static/images/marker.svg";
 import Globe from "../../static/images/globe.svg";
 import GoogleMap from "../../static/images/google map.svg";
+import MaleKnight from "../../static/images/male_knight_walking.gif";
+import FemaleKnight from "../../static/images/female_knight_walking.gif";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -143,6 +146,39 @@ const IndexPage: React.FC<PageProps> = () => {
                     </p>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className={characterStyles.background}>
+        <div className={characterStyles.container}>
+          <div>
+            <h1 className={characterStyles.characterHeader}>
+              Choose Your Avatar
+            </h1>
+            <p className={characterStyles.characterP}>
+              MyAdventureLog, the ultimate companion for capturing and reliving
+              your most memorable moments.
+            </p>
+          </div>
+          <div className={characterStyles.grid}>
+            <div className={characterStyles.characterCard}>
+              <div className={characterStyles.characterContainer}>
+                <img
+                  src={MaleKnight}
+                  alt="16 Bit Knight Walking"
+                  className={characterStyles.character}
+                />
+              </div>
+            </div>
+            <div className={characterStyles.characterCard}>
+              <div className={characterStyles.characterContainer}>
+                <img
+                  src={FemaleKnight}
+                  alt="16 Bit Knight Walking"
+                  className={characterStyles.character}
+                />
               </div>
             </div>
           </div>

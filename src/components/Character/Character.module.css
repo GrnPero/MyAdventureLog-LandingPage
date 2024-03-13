@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+.container {
+  margin: 2rem 2rem;
+   display: flex; /* Add this line */
+  flex-direction: column; /* Add this line */
+  justify-content: center; /* Add this line */
+  align-items: center; /* Add this line */
+}
+
+.background {
+    background-image: url('../../../static/images/character_background.png'); /* Path to your background image */
+    background-size: cover; /* Cover the entire container */
+    margin: -8px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for mobile layout */
+}
+
+.character-header {
+    font-size: 2.8rem;
+    line-height: 6rem;
+    font-family: Oswald;
+}
+
+.character-p {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  color: #CFCFCF;
+}
+
+.character-card {
+  background-image: url("../../../static/images/character_card.svg");
+  height: 17.57rem;
+  width: 28.93rem;
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin: 1rem 1rem;
+}
+
+.character-container {
+  justify-content: center;
+  align-items: center;
+}
+
+.character {
+  height: 14.44rem;
+  width: 14.44rem;
+}
