@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+.container {
+  margin: 2rem 2rem;
+}
+
+.background {
+    background-image: url('../../../static/images/footer_background.svg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire container */
+    margin: -8px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.logo {
+    margin-top: 2rem;
+    width: 22.7rem;
+}
+
+.footer-p {
+    margin-top: 0.91rem;
+    color: #CFCFCF;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.footer-header {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.88rem;
+    letter-spacing: 0.064rem;
+    text-transform: none;
+}
+
+.header-container {
+  display: flex; /* Add this line */
+  flex-direction: column; /* Add this line */
+  justify-content: center; /* Add this line */
+position: relative;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.collapsible-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically */
+    margin-top: -1rem;
+    margin-right: 7rem;
+    margin-left: 7rem;
+}
+
+.svg {
+    height: 1rem;
+    width: 1.9rem;
+    margin-left: 0.5rem; /* Add margin between text and SVG */
+    transition: transform 0.3s ease; /* Add transition for both rotation and color change */
+}
+
+.rotated {
+    transform: rotate(-180deg);
+}
+
+.rotated path {
+    stroke: #BCB5B1;
+}
+
+.p-footer {
+    color: #C2CDE7;
+    font-family: Manrope;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+}
+
+.p-footer-container {
+    margin-right: 7rem;
+    margin-left: 7rem;
+}
+
+.copyright {
+    color: #D9D9D9;
+    font-family: Manrope;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.52rem;
+    margin-top: 2.47rem;
+    margin-bottom: 3.5rem;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
