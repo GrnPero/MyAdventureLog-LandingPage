@@ -18,6 +18,8 @@ const Footer = () => {
       // If over 1024px, set all elements of chevronRotated array to true
       if (window.innerWidth > 1024) {
         setChevronRotated([true, true, true]);
+      } else {
+        setChevronRotated([false, false, false]);
       }
     };
 
