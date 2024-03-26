@@ -12,6 +12,16 @@
     flex-shrink: 0;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for mobile layout */
+}
+
+.grid-link {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for mobile layout */   
+}
+
 .logo {
     margin-top: 2rem;
     width: 22.7rem;
@@ -35,13 +45,20 @@
 }
 
 .header-container {
-  display: flex; /* Add this line */
-  flex-direction: column; /* Add this line */
-  justify-content: center; /* Add this line */
-position: relative;
+    display: flex; /* Add this line */
+    flex-direction: column; /* Add this line */
+    justify-content: center; /* Add this line */
+    position: relative;
 }
 
 .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-copyright {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,4 +120,88 @@ position: relative;
   margin: 0;
   margin-top: -1rem;
   margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .background {
+        background-image: url('../../../static/images/footer_background_desktop.png'); /* Path to your background image */      
+        background-size: cover;
+    }
+
+    .container {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-link {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;       
+        margin-left: 13.5rem;
+        margin-top: 2rem;
+    }
+
+    .header-container {
+        display: grid; /* Add this line */
+        margin-right: 13.5rem;
+    }
+
+    .svg {
+        display: none;
+    }
+
+    .p-footer-container {
+        margin-top: 2rem;
+        margin-right: 3rem;
+        margin-left: 3rem;
+        width: 100%;
+    }
+
+    .p-footer {
+        font-size: 1.5rem;
+        line-height: 5.1rem;
+        width: 100%;
+    }
+
+    .collapsible-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start; /* Align items vertically */
+        margin-top: 2rem;
+        margin-right: 3rem;
+        margin-left: 3rem;
+    }
+
+    .header-copyright {
+        margin-top: 4rem;
+    }
+
+    .logo {
+        margin-top: 2rem;
+        width: 27.18rem;
+    }
+
+    .footer-p {
+        margin-top: 1.17rem;
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        width: 40.7rem;
+    }
+
+    .copyright {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.88rem;
+        margin-top: 2.47rem;
+        margin-bottom: 3.5rem;
+    }
 }
