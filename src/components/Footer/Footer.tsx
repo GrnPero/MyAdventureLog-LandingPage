@@ -83,7 +83,7 @@ const Footer = () => {
                   <ul className={`${Styles.list}`}>
                     <li>
                       <a href="#" className={Styles.pFooter}>
-                        About us
+                        Contact
                       </a>
                     </li>
                     <li>
@@ -94,50 +94,6 @@ const Footer = () => {
                     <li>
                       <a href="#" className={Styles.pFooter}>
                         Avatar
-                      </a>
-                    </li>
-                  </ul>
-                </>
-              ) : null}
-            </div>
-          </div>
-          <div>
-            <div
-              onClick={() => toggleChevron(1)}
-              className={Styles.collapsibleHeader}
-            >
-              <h1 className={Styles.footerHeader}>Company</h1>
-              <svg
-                className={`${Styles.svg} ${
-                  chevronRotated[1] ? Styles.rotated : ""
-                }`}
-              >
-                <path
-                  d="M1.86987 1.27802L8.52796 8.89325C8.9264 9.34897 9.63519 9.34897 10.0336 8.89325L16.6916 1.27802"
-                  stroke="#EC6508"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  fill="none"
-                />
-              </svg>
-            </div>
-            <div className={Styles.pFooterContainer}>
-              {chevronRotated[1] ? (
-                <>
-                  <ul className={`${Styles.list}`}>
-                    <li>
-                      <a href="#" className={Styles.pFooter}>
-                        Blog
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className={Styles.pFooter}>
-                        Blog Article
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className={Styles.pFooter}>
-                        Contact
                       </a>
                     </li>
                   </ul>
