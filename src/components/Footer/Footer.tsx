@@ -82,17 +82,20 @@ const Footer = () => {
                 <>
                   <ul className={`${Styles.list}`}>
                     <li>
-                      <a href="#" className={Styles.pFooter}>
+                      <a
+                        href="mailto:app.myadventurelog@gmail.com"
+                        className={Styles.pFooter}
+                      >
                         Contact
                       </a>
                     </li>
                     <li>
-                      <a href="#" className={Styles.pFooter}>
+                      <a href="#features" className={Styles.pFooter}>
                         Key Features
                       </a>
                     </li>
                     <li>
-                      <a href="#" className={Styles.pFooter}>
+                      <a href="#avatar" className={Styles.pFooter}>
                         Avatar
                       </a>
                     </li>
@@ -138,7 +141,10 @@ const Footer = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="#" className={Styles.pFooter}>
+                      <a
+                        href="mailto:app.myadventurelog@gmail.com"
+                        className={Styles.pFooter}
+                      >
                         Support
                       </a>
                     </li>

@@ -16,6 +16,7 @@ const IndexPage: React.FC<PageProps> = () => {
   return (
     <Layout>
       <section
+        id="introduction"
         className={`${introductionStyles.container}
           ${introductionStyles.grid}
           ${introductionStyles.block}
@@ -50,7 +51,7 @@ const IndexPage: React.FC<PageProps> = () => {
           />
         </div>
       </section>
-      <section className={`${featureStyles.background}`}>
+      <section id="features" className={`${featureStyles.background}`}>
         <div className={`${featureStyles.container} ${featureStyles.grid}`}>
           <div
             className={`${featureStyles.gridOneTwo} ${featureStyles.heading} `}
@@ -151,7 +152,7 @@ const IndexPage: React.FC<PageProps> = () => {
           </div>
         </div>
       </section>
-      <section className={characterStyles.background}>
+      <section id="avatar" className={characterStyles.background}>
         <div className={characterStyles.container}>
           <div>
             <h1 className={characterStyles.characterHeader}>
