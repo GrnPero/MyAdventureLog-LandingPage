@@ -17,11 +17,13 @@ const Header = () => {
             </h1>
             <p>Your Personal Journey Tracker</p>
             <div className={styles.containerImage}>
-              <img
-                src={GooglePlay}
-                alt="Google Play Logo"
-                className={styles.googleplay}
-              />
+              <a href="https://play.google.com">
+                <img
+                  src={GooglePlay}
+                  alt="Google Play Logo"
+                  className={styles.googleplay}
+                />
+              </a>
             </div>
           </div>
           <div className={styles.header__iphone}>

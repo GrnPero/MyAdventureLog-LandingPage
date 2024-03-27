@@ -47,7 +47,9 @@ const Footer = () => {
     <footer className={Styles.background}>
       <div className={`${Styles.container} ${Styles.grid}`}>
         <div className={`${Styles.header}`}>
-          <img src={Logo} alt="Logo" className={Styles.logo} />
+          <a href="/">
+            <img src={Logo} alt="Logo" className={Styles.logo} />
+          </a>
           <p className={Styles.footerP}>
             MyAdventureLog, the ultimate companion for capturing and reliving
             your most memorable moments.
@@ -131,7 +133,7 @@ const Footer = () => {
                 <>
                   <ul className={`${Styles.list}`}>
                     <li>
-                      <a href="#" className={Styles.pFooter}>
+                      <a href="/terms" className={Styles.pFooter}>
                         Terms & Conditions
                       </a>
                     </li>

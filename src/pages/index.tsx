@@ -34,11 +34,13 @@ const IndexPage: React.FC<PageProps> = () => {
           <div
             className={`${introductionStyles.imageContainer} ${introductionStyles.googlePlayContainer}`}
           >
-            <img
-              src={GooglePlay}
-              alt="Get it on the Google Play store"
-              className={introductionStyles.playStore}
-            />
+            <a href="https://play.google.com">
+              <img
+                src={GooglePlay}
+                alt="Get it on the Google Play store"
+                className={introductionStyles.playStore}
+              />
+            </a>
           </div>
         </div>
         <div
@@ -64,11 +66,13 @@ const IndexPage: React.FC<PageProps> = () => {
               your most memorable moments.
             </p>
             <div className={featureStyles.googlePlayContainer}>
-              <img
-                src={GooglePlay}
-                alt="Get on Google Play"
-                className={featureStyles.googlePlay}
-              />
+              <a href="https://play.google.com">
+                <img
+                  src={GooglePlay}
+                  alt="Get on Google Play"
+                  className={featureStyles.googlePlay}
+                />
+              </a>
             </div>
           </div>
           <div className={featureStyles.gridOneTwo}>
