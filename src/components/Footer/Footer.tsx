@@ -138,7 +138,7 @@ const Footer = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="#" className={Styles.pFooter}>
+                      <a href="/privacyPolicy" className={Styles.pFooter}>
                         Privacy Policy
                       </a>
                     </li>
