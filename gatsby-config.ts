@@ -14,7 +14,7 @@ const config: GatsbyConfig = {
     options: {
       "name": "images",
       "path": "./src/images/",
-      prefixes: [`/terms`, '/privacyPolicy']
+      prefixes: [`/terms`, '/privacyPolicy', '/deleteAccount']
     },
     __key: "images"
   }]
