@@ -34,7 +34,7 @@ const IndexPage: React.FC<PageProps> = () => {
           <div
             className={`${introductionStyles.imageContainer} ${introductionStyles.googlePlayContainer}`}
           >
-            <a href="https://play.google.com">
+            <a href="https://play.google.com/store/apps/details?id=app.myadventurelog.app">
               <img
                 src={GooglePlay}
                 alt="Get it on the Google Play store"
@@ -66,7 +66,7 @@ const IndexPage: React.FC<PageProps> = () => {
               your most memorable moments.
             </p>
             <div className={featureStyles.googlePlayContainer}>
-              <a href="https://play.google.com">
+              <a href="https://play.google.com/store/apps/details?id=app.myadventurelog.app">
                 <img
                   src={GooglePlay}
                   alt="Get on Google Play"

@@ -17,7 +17,7 @@ const Header = () => {
             </h1>
             <p>Your Personal Journey Tracker</p>
             <div className={styles.containerImage}>
-              <a href="https://play.google.com">
+              <a href="https://play.google.com/store/apps/details?id=app.myadventurelog.app">
                 <img
                   src={GooglePlay}
                   alt="Google Play Logo"
